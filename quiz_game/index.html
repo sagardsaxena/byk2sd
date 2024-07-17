@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> Presidents Quiz </h1>
+        <h2 id="question"> Welcome to the Presidents Quiz! </h2>
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg"/>
+        <div>
+            <button id="choice_1" onClick="selectAnswer(this.id)">-</button>
+            <button id="choice_2" onClick="selectAnswer(this.id)">-</button>
+            <button id="choice_3" onClick="selectAnswer(this.id)">-</button>
+            <button id="choice_4" onClick="selectAnswer(this.id)">-</button>
+        </div>
+        <button id="submit" onClick="submitAnswer()"> <strong> Start Game </strong> </button>
+        <h2 id="score"> Score: 0 </h2>
+        
+        <h5>Made By: Smerugar Palashwarena</p>
+    </body>
+
+    <style>
+        body {
+            background-color:rgb(132, 186, 220);
+            font-family:'Gill Sans', sans-serif;
+            text-align: center;
+        }
+        img {
+            max-height: 40vh;
+            max-width: 40%;
+            height: auto;
+            width: auto;
+        }
+        button {
+            background-color:rgb(240, 192, 172);
+            font-family:'Gill Sans';
+            margin: auto;
+            border-radius: 10px;
+
+            /* vertically align the buttons */
+            display: block;
+            /* add space around the buttons */
+            margin-top: 1vh;
+            padding: 1vh;
+            /* set size of the buttons */
+            width: 40%;
+            white-space: normal;
+        }
+        
+        h5 {
+            position: absolute;
+            left: 85%;
+        }
+    </style>
+    <script src="./script.js"> </script>
+    
+</html>
